@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Architecture Interview Lab</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <a class="brand" href="#/"><span class="logo">◆</span><span><b>Architecture Lab</b><small>Senior Java · System Design</small></span></a>
+    <nav id="nav"></nav>
+    <div class="side-foot">
+      <button id="themeBtn" class="btn ghost sm" title="Toggle theme">◐ Theme</button>
+      <span class="muted xs">Progress saved locally</span>
+    </div>
+  </aside>
+  <div id="main">
+    <header id="topbar">
+      <button id="menuBtn" class="btn ghost sm" aria-label="Menu">☰</button>
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Search topics, patterns, questions…  ( / )" autocomplete="off">
+        <div id="searchResults" class="search-results hidden"></div>
+      </div>
+      <button id="randomBtn" class="btn sm" title="Random question">🎲 Random question</button>
+    </header>
+    <div id="view"></div>
+  </div>
+</div>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="modal-x" id="modalX">×</button><div id="modalBody"></div></div></div>
+
+<!-- Optional: Mermaid for architecture diagrams (falls back to source text when offline) -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js" defer></script>
+
+<script src="js/core/lab.js"></script>
+<script src="js/core/md.js"></script>
+<script src="js/core/store.js"></script>
+
+<!-- Content -->
+<script src="content/lld-concepts.js"></script>
+<script src="content/lld-problems-1.js"></script>
+<script src="content/lld-problems-2.js"></script>
+<script src="content/hld-1.js"></script>
+<script src="content/hld-2.js"></script>
+<script src="content/sd-1.js"></script>
+<script src="content/sd-2.js"></script>
+<script src="content/sd-3.js"></script>
+<script src="content/java.js"></script>
+<script src="content/iam.js"></script>
+<script src="content/questions.js"></script>
+
+<!-- Visualizations -->
+<script src="js/viz/engine.js"></script>
+<script src="js/viz/flows.js"></script>
+<script src="js/viz/traffic.js"></script>
+<script src="js/viz/data.js"></script>
+
+<!-- App -->
+<script src="js/mock.js"></script>
+<script src="js/core/app.js"></script>
+</body>
+</html>
